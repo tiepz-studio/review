@@ -1,0 +1,16 @@
+{
+  "name": "average-joe",
+  "version": "1.0.0",
+  "repository": "git@github.com:chesterhow/average-joe.git",
+  "author": "Chester How <chesterhow@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "bundle exec jekyll serve"
+  },
+  "devDependencies": {
+    "stylelint": "^9.2.0",
+    "stylelint-config-property-sort-order-smacss": "^4.0.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.1.0"
+  }
+}
