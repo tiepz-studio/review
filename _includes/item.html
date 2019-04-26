@@ -13,11 +13,16 @@
     {% else %}
       <h2 class="item__title">{{ post.title }}</h2>
     {% endif %}
-    
-    <h3 class="item__score">{{ post.review.overall }}</h3><!--
-    --><h6 class="item__score--faded">/100</h6>
 
-    <h6 class="item__estate">&bull;&nbsp;{{ post.estate }}</h6>
+    <div class="item__score">
+      {% for i in (1..5) %}
+        {% if i <= post.review.overall %}
+          <h5>&#x2605;</h5>
+        {% else %}
+          <h5 class="score__faded">&#x2605;</h5>
+        {% endif %}
+      {% endfor %}
+    </div>
 
     {% if post == paginator.posts.first %}
       <p class="item__body">{{ post.excerpt | strip_html }}...</p>

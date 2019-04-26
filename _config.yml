@@ -1,5 +1,5 @@
 # Site settings
-title: Average Joe Coffeehouse Reviews
+title: Average Joe
 description: "Everything you’ve ever wanted to know about coffeehouses in Singapore."
 url: "https://averagejoe.reviews"
 
@@ -11,12 +11,10 @@ author:
   github_username: chesterhow
 
 # Build settings
-future: true
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
-  - jekyll-seo-tag
 
 sass:
   sass_dir: _sass
@@ -45,12 +43,3 @@ pagination:
   sort_reverse: true
   title: ':title'
   permalink: '/page/:num/'
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      image:
-        path: /assets/images/og.png
-        height: 630
-        width: 1200

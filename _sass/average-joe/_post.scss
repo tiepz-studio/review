@@ -30,12 +30,12 @@
   &__content {
     @extend %content-max-width;
     margin-bottom: 2rem;
-    
+
     // image in post
     img {
       display: block;
       max-width: 100%;
-      margin: 1.5rem auto 0.5rem;
+      margin: 0 auto 0.5rem;
     }
 
     // image in post with caption
@@ -95,14 +95,6 @@
 
   &__address {
     grid-area: address;
-
-    p {
-      text-decoration: underline;
-    }
-
-    p:hover {
-      cursor: pointer;
-    }
   }
 
   &__opening {
